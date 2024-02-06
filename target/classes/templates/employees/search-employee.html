@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+
+        
+        <hr>
+
+        <p class="h4 mb-4">Search Employee</p>
+
+         <form th:action="@{/employees/findbyEmail}" method="GET">
+
+            <input type="text" name="mail" class="form-control mb-4 w-25" placeholder="Email">
+            <button type="submit" class="btn btn-info col-2">Search</button>
+
+        </form> 
+		
+        <hr>
+        <a th:href="@{/employees/list}">Back to Employees List</a>
+		
+    </div>
+    
+</body>
+</html>
