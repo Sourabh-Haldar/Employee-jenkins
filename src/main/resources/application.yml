@@ -1,0 +1,13 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: employee-app
+  datasource:
+    url: jdbc:mysql://employee.c42eh0n4qcg1.us-east-1.rds.amazonaws.com:3306/hr
+    username: admin
+    password: admin123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
